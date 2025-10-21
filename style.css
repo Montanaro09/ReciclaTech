@@ -1,1 +1,232 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header .logo img {
+  width: 150px;
+  height: 30px;
+}
+.header .logo span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+.nav a:hover {
+  color: #1cc47b;
+}
+
+.Começar-Agora {
+  background: #1cc47b;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.Começar-Agora:hover {
+  background: rgb(24.8125, 173.6875, 108.9977678571);
+}
+
+.primeiro {
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.bbotao {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.bbotao button {
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.bbotao .butond {
+  border: 2px solid #1cc47b;
+  background: transparent;
+  color: #1cc47b;
+}
+.bbotao .butond:hover {
+  background: #1cc47b;
+  color: white;
+}
+.bbotao .butona {
+  border: 2px solid #1cc47b;
+  background: transparent;
+  color: #1cc47b;
+}
+.bbotao .butona:hover {
+  background: #1cc47b;
+  color: white;
+}
+
+.reciclaimg {
+  width: 200px;
+  margin-top: 2.5rem;
+}
+
+.dados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: #f5f7fa;
+  padding: 2.5rem 1rem;
+  margin-top: 2rem;
+}
+.dados .stat {
+  text-align: center;
+}
+.dados .stat h2 {
+  font-size: 2rem;
+  color: #1cc47b;
+  margin-bottom: 0.3rem;
+}
+.dados .stat p {
+  color: #555;
+  font-weight: 500;
+}
+
+.funciona {
+  text-align: left;
+  padding: 4rem 8rem;
+}
+.funciona h3 {
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.8rem;
+}
+.funciona p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.cards-funciona {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 300px;
+  background: #f8fafd;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.card .card-header h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.card .card-header .icon {
+  font-size: 1.5rem;
+}
+.card .sub {
+  color: #555;
+  margin-bottom: 1.2rem;
+}
+.card ol {
+  list-style: none;
+  padding-left: 0;
+}
+.card ol li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2rem;
+}
+.card ol li::before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #1cc47b;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.card.doador {
+  border-top: 4px solid #1cc47b;
+}
+.card.doador h3 {
+  color: #1cc47b;
+}
+.card.doador ol li::before {
+  background: #1cc47b;
+}
+.card.adquirente {
+  border-top: 4px solid #0066ff;
+}
+.card.adquirente h3 {
+  color: #0066ff;
+}
+.card.adquirente ol li::before {
+  background: #0066ff;
+}/*# sourceMappingURL=style.css.map */
