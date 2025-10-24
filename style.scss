@@ -153,12 +153,13 @@ p {
 }
 
 .funciona {
-    text-align: left;
+    text-align: center;
     padding: 4rem 8rem;
 
 
 h3 {
     display: flex;
+    justify-content: center;
     font-size: 1.8rem;
     font-weight: 700;
     color: $text-dark;
@@ -168,7 +169,7 @@ h3 {
 p {
     font-size: 1.1rem;
     color: #555;
-    margin-top: 0.3rem;
+    margin-top: 1rem;
     
 
 }
@@ -261,5 +262,305 @@ p {
       }
     }
   }
+
+  .produtos {
+  background: #f8fafd;
+  text-align: center;
+  padding: 4rem 6rem;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $text-dark;
+    margin-bottom: 0.5rem;
+  }
+
+  .sub {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .cards-produtos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .card-produto {
+    background: #fff;
+    border: 2px solid $green;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 2px solid $green;
+    }
+
+    .info {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $text-dark;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #555;
+      }
+
+      .btn-adquirir {
+        background: $green;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 0.6rem 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          background: darken($green, 5%);
+        }
+      }
+    }
+  }
+}
+
+.depoimentos {
+  text-align: center;
+  padding: 4rem 6rem;
+  background: #fff;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $text-dark;
+    margin-bottom: 0.5rem;
+  }
+
+  .sub {
+    color: #666;
+    margin-bottom: 2.5rem;
+  }
+
+  .cards-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .card-depo {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .stars {
+      color: #fbc02d;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $text-dark;
+      }
+
+      span {
+        font-size: 0.85rem;
+        color: #777;
+      }
+    }
+  }
+}
+
+.cta {
+  text-align: center;
+  background: #f8fafd;
+  padding: 4rem 6rem;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $text-dark;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .btn-primario {
+      background: $green;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: darken($green, 5%);
+      }
+    }
+
+    .btn-secundario {
+      border: 2px solid $green;
+      background: transparent;
+      color: $green;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: $green;
+        color: #fff;
+      }
+    }
+  }
+}
+.footer {
+  background-color: #0f172a;
+  color: #d1d5db;
+  padding: 60px 0 20px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 20px;
+  }
+
+  &__col {
+    h3,
+    h4 {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 8px 0;
+
+        a {
+          color: #d1d5db;
+          text-decoration: none;
+          font-size: 0.9rem;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #10b981;
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    margin-top: 10px;
+
+    a {
+      display: inline-block;
+      background-color: #1e293b;
+      color: #fff;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 8px;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #10b981;
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid #1e293b;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 15px;
+
+    p {
+      font-size: 0.85rem;
+      color: #9ca3af;
+
+      span {
+        color: #10b981;
+      }
+    }
+  }
+}
 
 
